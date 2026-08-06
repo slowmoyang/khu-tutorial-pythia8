@@ -29,8 +29,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/gxx_linux-64-14.4.0-h82679ac_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/hepmc3-3.3.1-py314h1e8eec6_4.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-78.3-h54a6638_2.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/just-1.58.0-hb17b654_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.46.1-default_hbd61a6d_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/lhapdf-6.5.6-py314h97ea11e_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libblas-3.11.0-8_h4a7cf45_openblas.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libcblas-3.11.0-8_h0358290_openblas.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.1-hecca717_1.conda
@@ -293,18 +293,6 @@ packages:
     - icu >=78.3,<79.0a0
   size: 14455340
   timestamp: 1784916378180
-- conda: https://conda.anaconda.org/conda-forge/linux-64/just-1.58.0-hb17b654_1.conda
-  sha256: d26da5e1699c632f056dbdc8854ae074596da4a8e49614bacd16234e823dcc7d
-  md5: 4a9614cd015b2b395ae1bacf9e83fcf5
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - libgcc >=14
-  constrains:
-  - __glibc >=2.17
-  license: CC0-1.0
-  run_exports: {}
-  size: 1995667
-  timestamp: 1785875895002
 - conda: https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.46.1-default_hbd61a6d_102.conda
   sha256: 27d83f1188cd19bcb7754a078b3fa7f4cfb8527f8eb2fde54dd01fc529d1adec
   md5: 449500f2c089da11c40f5c21312e3e07
@@ -318,6 +306,22 @@ packages:
   run_exports: {}
   size: 745303
   timestamp: 1784214507189
+- conda: https://conda.anaconda.org/conda-forge/linux-64/lhapdf-6.5.6-py314h97ea11e_2.conda
+  sha256: 6f6f770a5941bdbf6944aef42d86cd2dc8e4176545367325998d32ce56bcd723
+  md5: 0ed53404a510e0b2b619868385cbdc8d
+  depends:
+  - python
+  - __glibc >=2.17,<3.0.a0
+  - libstdcxx >=14
+  - libgcc >=14
+  - python_abi 3.14.* *_cp314
+  license: GPL-3.0-only
+  license_family: GPL
+  run_exports:
+    weak:
+    - lhapdf >=6.5.6,<6.6.0a0
+  size: 668940
+  timestamp: 1775783122244
 - conda: https://conda.anaconda.org/conda-forge/linux-64/libblas-3.11.0-8_h4a7cf45_openblas.conda
   build_number: 8
   sha256: b2da6bfd72a1c9cb143ccf64bf5b28790cb4eb58bd1cb978f6537b2322f7d48b
