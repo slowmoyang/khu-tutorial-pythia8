@@ -1,0 +1,10 @@
+[workspace]
+authors = ["Seungjin Yang <slowmoyang@gmail.com>"]
+channels = ["conda-forge"]
+name = "khu-tutorial-pythia8"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
