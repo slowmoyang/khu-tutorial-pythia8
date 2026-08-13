@@ -10,7 +10,6 @@ version = "0.1.0"
 configure = { cmd = "meson setup build", inputs = ["meson.build", "subprojects/*.wrap"], outputs = ["build/build.ninja"] }
 reconfigure = "meson setup build --wipe"
 build = { cmd = "meson compile -C build", depends-on = ["configure"] }
-run = { cmd = "./build/run-pythia8", depends-on = ["build"] }
 
 [dependencies]
 pythia8 = ">=8.312,<9"
