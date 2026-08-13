@@ -1,5 +1,5 @@
 project(
-  'hh-pythia8',
+  'khu-tutorial-pythia8',
   'cpp',
   default_options : [
     'cpp_std=c++23',
