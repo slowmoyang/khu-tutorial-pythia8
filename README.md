@@ -26,7 +26,7 @@ pixi run build
 ### Generate W boson production events
 
 ```
-pixi run ./build/run-pythia8 -c ./config/w.cmnd -o output.hepmc -n 10
+pixi run ./build/run-pythia8 -c ./configs/w.cmnd -o output.hepmc -n 10
 ```
 
 
