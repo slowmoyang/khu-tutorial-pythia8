@@ -19,17 +19,7 @@ At a collider such as the LHC, two bunches of protons cross. Protons are not
 elementary particles: each contains quarks and gluons, collectively called
 **partons**. In a collision, one parton from each proton may undergo a hard
 interaction. For the example in this repository, a quark and an antiquark can
-produce a W boson:
-
-```text
-proton              proton
-   \                  /
-    quark + antiquark
-             |
-             W
-             |
-      decay products + other particles
-```
+produce a W boson.
 
 We cannot predict every individual collision exactly. Quantum mechanics gives
 probabilities for possible outcomes, so a program such as Pythia generates
